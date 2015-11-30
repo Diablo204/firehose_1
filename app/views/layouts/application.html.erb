@@ -10,21 +10,23 @@
 	<header>
 		<div class="row">
 			<div class="col-xs-3">
+      <%= link_to root_path, :class => 'logo' do %>
 				<div class="circle">
   					<br />
-  					Words
+  					Tips
   					<br />
-  					By
+  					for
   					<br />
-  					Hemingway
+  					Writing
 				</div>
+        <% end %>
 			</div>
 			<div class="col-xs-4 slogan">
-			Hemingway's unsolicted advice about writing, working and everything else.
+			Randome writing advice for writers, from writers
 			
 			</div>
 			<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 			</div>
 		</div>
@@ -40,7 +42,7 @@
 <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "Give me more!", "#", :class => 'next-quote' %>
+        <%= link_to "Give me more!", root_path, :class => 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Proudly hacked in San Francisco by <a href="http://jasonshueh.com">Jason Shueh<br />
