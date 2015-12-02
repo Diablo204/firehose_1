@@ -2,7 +2,7 @@ Splurty::Application.routes.draw do
   root 'quotes#index'
   resources :quotes
   get 'about', :to => 'quotes#about'
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -22,7 +22,6 @@ Splurty::Application.routes.draw do
   #   resources :products do
   #     member do
   #       get 'short'
-  #       post 'toggle'
   #     end
   #
   #     collection do
